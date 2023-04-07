@@ -13,9 +13,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-
-  /* background-color: rgb(245, 245, 245);
-  /* buggy atm, could be my on my end though and need to ccc ? */
 }
 
 html {
@@ -39,11 +36,10 @@ button {
   cursor: pointer;
 }
 
-/* section {
-  background-color: rgb(245, 245, 245);
+section {
+  /* background-color: rgb(245, 245, 245); */
   transition: all 300ms ease;
 }
-buggy atm ? */
 
 input,
 textarea {
@@ -176,6 +172,13 @@ textarea:focus {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+/* HOME PAGE */
+
+.dark__mode {
+  transition: all 300ms;
 }
 
 /* 
@@ -560,4 +563,3 @@ footer {
   transform: translateX(72px);
   opacity: 1;
 }
-

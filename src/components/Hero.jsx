@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineGithub } from "react-icons/ai";
 import { BsFileEarmarkPdfFill } from "react-icons/bs";
+import { ThemeContext } from "../App";
 
 const Hero = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
-    <header id='hero' className='header'>
+    <section
+      id='hero'
+      className={`${
+        theme === "light" ? "dark" : "text-white"
+      } header transition__ease h-[90vh]`}
+    >
       <div className='-mt-28'>
         {/* xs is 48 px */}
         <h1 className='mb-3 text-left font-semibold leading-none text-5xl sm:text-9xl title'>
@@ -52,12 +59,14 @@ const Hero = () => {
               href='#'
               className='bg-cOrange text-white p-2 w-8 h-8 text-sm mr-3 flex justify-center items-center rounded-full header__para-secondary hover:scale-110 active:scale-90 transition-all'
             >
-              <BsFileEarmarkPdfFill />
+              <BsFileEarmarkPdfFill
+                className={`${theme === "light" ? "dark" : "text-white"}`}
+              />
             </a>
           </li>
         </ul>
       </div>
-    </header>
+    </section>
   );
 };
 

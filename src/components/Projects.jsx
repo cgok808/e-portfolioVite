@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { HiLink } from "react-icons/hi";
 import cryptoProject from "../assets/images/crypto-min.png";
 import ePort from "../assets/images/e-port.png";
 import library from "../assets/images/library.png";
+import { ThemeContext } from "../App";
 
-// projects section having trouble with vite? fix later
+// projects dynamic image section having trouble with vite? fix later
 
 // const ProjectCard = ({
 //   id,
@@ -46,6 +47,10 @@ import library from "../assets/images/library.png";
 // };
 
 const Projects = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+  const handleThemeToggle = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
   // const projectsList = [
   //   {
   //     id: 1,
@@ -106,10 +111,21 @@ const Projects = () => {
   //   );
   // };
   return (
-    <section id='projects'>
-      <div className='container my-12 flex justify-center items-center'>
+    <section
+      id='projects'
+      className={`${theme === "light" ? "dark" : "bg-[#242424]"}`}
+    >
+      <div
+        className={`${
+          theme === "light" ? "dark" : "bg-[#242424]"
+        }'container my-12 flex justify-center items-center'`}
+      >
         <div className='w-full max-w-5xl my-auto mx-0 py-0 px-3'>
-          <h1 className='text-center text-5xl mb-14 font-bold'>
+          <h1
+            className={`${
+              theme === "light" ? "dark" : "text-white"
+            } text-center text-5xl mb-14 font-bold`}
+          >
             Here are some of my <span className='text-cOrange'>projects</span>
           </h1>
           <ul>

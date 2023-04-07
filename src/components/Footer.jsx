@@ -1,8 +1,8 @@
 import React from "react";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
-import me from "../assets/images/me2.png"
+import me from "../assets/images/me2.png";
 
-const Footer = ({ id, name }) => {
+const Footer = () => {
   const footerSocials = [
     { id: 1, name: "GitHub" },
     { id: 2, name: "LinkedIn" },
@@ -24,7 +24,7 @@ const Footer = ({ id, name }) => {
           <ul className='footer__social--list'>
             {footerSocials.map((social) => {
               return (
-                <li key={id}>
+                <li key={social.id}>
                   <a
                     href=''
                     className='footer__social--link link__hover-effect link__hover-effect--white font-semibold'
