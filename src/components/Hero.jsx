@@ -3,6 +3,20 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineGithub } from "react-icons/ai";
 import { BsFileEarmarkPdfFill } from "react-icons/bs";
 import { ThemeContext } from "../App";
+import { MdMail } from "react-icons/md";
+
+const ContactBtn = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+  return (
+    <button
+      className={`${
+        theme === "light" ? "dark" : "bg-white text-black"
+      } h-[70px] w-[70px] text-3xl rounded-full border-none bg-[#242424] text-white fixed bottom-8 right-10 z-10 mail__btn flex justify-center items-center hover:scale-110 active:scale-90 transition-all`}
+    >
+      <MdMail />
+    </button>
+  );
+};
 
 const Hero = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -35,7 +49,11 @@ const Hero = () => {
           </a>
         </p>
         <a href='#projects' className='scroll'>
-          <div className='scroll__icon transition__ease hover:scale-110 active:scale-90 header__para-secondary'></div>
+          <div
+            className={`${
+              theme === "light" ? "dark" : "scroll__icon--white"
+            } scroll__icon transition__ease hover:scale-110 active:scale-90 header__para-secondary`}
+          ></div>
         </a>
         <ul className='mt-2 flex'>
           <li>
@@ -59,13 +77,12 @@ const Hero = () => {
               href='#'
               className='bg-cOrange text-white p-2 w-8 h-8 text-sm mr-3 flex justify-center items-center rounded-full header__para-secondary hover:scale-110 active:scale-90 transition-all'
             >
-              <BsFileEarmarkPdfFill
-                className={`${theme === "light" ? "dark" : "text-white"}`}
-              />
+              <BsFileEarmarkPdfFill />
             </a>
           </li>
         </ul>
       </div>
+      <ContactBtn />
     </section>
   );
 };

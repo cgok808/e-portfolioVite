@@ -111,15 +111,8 @@ const Projects = () => {
   //   );
   // };
   return (
-    <section
-      id='projects'
-      className={`${theme === "light" ? "dark" : "bg-[#242424]"}`}
-    >
-      <div
-        className={`${
-          theme === "light" ? "dark" : "bg-[#242424]"
-        }'container my-12 flex justify-center items-center'`}
-      >
+    <section id='projects'>
+      <div className='container my-12 flex justify-center items-center'>
         <div className='w-full max-w-5xl my-auto mx-0 py-0 px-3'>
           <h1
             className={`${

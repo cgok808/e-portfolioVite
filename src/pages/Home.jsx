@@ -5,12 +5,14 @@ import { ThemeContext } from "../App";
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
-    <div className={`${theme === "light" ? "dark": "bg-[#242424]"} dark__mode`}>
+    <div
+      className={`${theme === "light" ? "dark" : "bg-[#242424]"} dark__mode`}
+    >
       <Nav />
       <Hero />
       <Projects />
-      <Footer />
       <Modal />
+      <Footer />
     </div>
   );
 };

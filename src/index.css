@@ -174,7 +174,6 @@ textarea:focus {
   }
 }
 
-
 /* HOME PAGE */
 
 .dark__mode {
@@ -251,6 +250,18 @@ header {
   background-color: #242424;
   border-radius: 2px;
   animation: scroll 1000ms infinite alternate-reverse;
+}
+
+.scroll__icon--white {
+  border-color: white;
+}
+
+.scroll__icon--white:after {
+  background-color: white;
+}
+
+.mail__btn {
+  box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28);
 }
 
 /* 
