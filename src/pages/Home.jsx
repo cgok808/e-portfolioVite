@@ -1,19 +1,23 @@
 import React, { useContext } from "react";
-import { Footer, Hero, Modal, Nav, Projects } from "../components";
+import { Footer, Hero, Nav, Projects } from "../components";
 import { ThemeContext } from "../App";
+import { ModalContext } from "../contexts/ModalCotext";
+import { useState } from "react";
 
 const Home = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme} = useContext(ThemeContext);
+  const [modal, setModal] = useState(false);
   return (
-    <div
-      className={`${theme === "light" ? "dark" : "bg-[#242424]"} dark__mode`}
-    >
-      <Nav />
-      <Hero />
-      <Projects />
-      <Modal />
-      <Footer />
-    </div>
+    <ModalContext.Provider value={{ modal, setModal }}>
+      <div
+        className={`${theme === "light" ? "dark" : "bg-[#242424]"} dark__mode`}
+      >
+        <Nav />
+        <Hero />
+        <Projects />
+        <Footer />
+      </div>
+    </ModalContext.Provider>
   );
 };
 

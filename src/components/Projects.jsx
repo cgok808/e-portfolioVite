@@ -117,7 +117,7 @@ const Projects = () => {
           <h1
             className={`${
               theme === "light" ? "dark" : "text-white"
-            } text-center text-5xl mb-14 font-bold`}
+            } text-center text-5xl mb-14 font-bold mt-28`}
           >
             Here are some of my <span className='text-cOrange'>projects</span>
           </h1>
