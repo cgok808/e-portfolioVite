@@ -1,8 +1,35 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { ModalContext } from "../contexts/ModalCotext";
+import emailjs from "@emailjs/browser";
 
 const Modal = () => {
   const { modal, setModal } = useContext(ModalContext);
+
+  // EMAIL JS
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        `${import.meta.env.VITE_SERVICE_ID}`,
+        `${import.meta.env.VITE_TEMPLATE_ID}`,
+        form.current,
+        `${import.meta.env.VITE_PUBLIC_KEY}`
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    form.current.reset();
+  };
+
   return (
     <div className={`${modal === false ? true : "modal--open"} modal`}>
       <div className='modal__half modal__about text-black text-center'>
@@ -68,9 +95,11 @@ const Modal = () => {
         <h3 className='mt-[12px] mr-0 mb-[24px] ml-0 text-base'>
           I'm currently open to new opportunities.
         </h3>
-        <form id='contact__form'>
+        <form id='contact__form' ref={form} onSubmit={sendEmail}>
           <div className='form__item'>
-            <label className='form__item--label'>Name</label>
+            <label className='form__item--label' name='user_name'>
+              Name
+            </label>
             <input
               className='input'
               name='user_name'
@@ -79,7 +108,9 @@ const Modal = () => {
             ></input>
           </div>
           <div className='form__item'>
-            <label className='form__item--label'>Email</label>
+            <label className='form__item--label' name='user_email'>
+              Email
+            </label>
             <input
               className='input'
               name='user_email'
@@ -88,7 +119,9 @@ const Modal = () => {
             ></input>
           </div>
           <div className='form__item'>
-            <label className='form__item--label'>Message</label>
+            <label className='form__item--label' name='message'>
+              Message
+            </label>
             <textarea
               className='input'
               name='message'
@@ -96,7 +129,12 @@ const Modal = () => {
               required
             ></textarea>
           </div>
-          <button id='contact__submit' className='form__submit'>
+          <button
+            id='contact__submit'
+            className='form__submit'
+            value='Send'
+            type='submit'
+          >
             Send it my way
           </button>
         </form>
