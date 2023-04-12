@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { Footer, Hero, Nav, Projects } from "../components";
+import { Footer, Hero, Modal, Nav, Projects } from "../components";
 import { ThemeContext } from "../App";
 import { ModalContext } from "../contexts/ModalCotext";
 import { useState } from "react";
 
 const Home = () => {
-  const { theme} = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const [modal, setModal] = useState(false);
   return (
     <ModalContext.Provider value={{ modal, setModal }}>
@@ -16,6 +16,7 @@ const Home = () => {
         <Hero />
         <Projects />
         <Footer />
+        <Modal />
       </div>
     </ModalContext.Provider>
   );
