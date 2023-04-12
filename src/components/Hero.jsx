@@ -10,7 +10,7 @@ const ContactBtn = ({ theme }) => {
   return (
     <button
       className={`${
-        theme === "light" ? "dark" : "bg-white text-black"
+        theme === "light" ? "dark" : "bg-white black"
       } h-[70px] w-[70px] text-3xl rounded-full border-none bg-[#242424] text-white fixed bottom-8 right-10 z-50 mail__btn flex justify-center items-center hover:scale-110 active:scale-90 transition-all`}
     >
       <MdMail />
@@ -23,7 +23,7 @@ const Hero = () => {
   const { modal, setModal } = useContext(ModalContext);
   const handleModalToggle = () => {
     setModal(modal === true ? false : true);
-    window.scrollTo({top: 0, behavior: "smooth"})
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <>
@@ -98,7 +98,7 @@ const Hero = () => {
           </ul>
         </div>
         <div className={`${modal === false ? true : "modal--open"} modal`}>
-          <div className='modal__half modal__about text-black'>
+          <div className='modal__half modal__about text-black text-center'>
             <h3 className='text-3xl font-semibold'>Here's a bit about me.</h3>
             <h4 className='mt-[12px] mr-0 mb-[24px] ml-0 text-base'>
               Specific Interests:
@@ -108,18 +108,19 @@ const Hero = () => {
               </b>
             </h4>
             <p className='modal__para'>
-              I am currently pursuing a{" "}
-              <b className='text-cOrange'>computer science</b> bachelor's degree
-              from University of Colorado Boulder.
-              <br /> I am <b className='text-cOrange'>
-                programming enthusiast
+              I have a huge <b className='text-cOrange'>passion/love</b> for
+              tech! It all started from a young age exploring the Internet and
+              playing video games on the computer... to now throwing myself at
+              every opportunity to{" "}
+              <b className='text-cOrange'>
+                learn and expand my technical skillset
               </b>{" "}
-              and have always loved learning about{" "}
-              <b className='text-cOrange'>computers</b>
-              . I'm always on the lookout for new opportunities to learn and
-              grow my skillset. <br /> I am currently on working side projects
-              as of now, and you can check my{" "}
-              <b className='text-cOrange'>technology stack</b> down below!
+              at every corner!
+              <br />I am currently pursuing my major in University of Colorado
+              Boulder for a computer science bachelor's. I am a{" "}
+              <b className='text-cOrange'>self-taught</b> frontend developer and
+              have been certified by <b className='text-cOrange'>Google</b> that
+              I understand <b className='text-cOrange'>IT Support</b> concepts!
             </p>
             <div className='modal__languages'>
               <figure className='modal__language'>
