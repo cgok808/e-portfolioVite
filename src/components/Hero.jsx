@@ -11,7 +11,7 @@ const ContactBtn = ({ theme }) => {
     <button
       className={`${
         theme === "light" ? "dark" : "bg-white black"
-      } h-[70px] w-[70px] text-3xl rounded-full border-none bg-[#242424] text-white fixed bottom-8 right-10 z-50 mail__btn flex justify-center items-center hover:scale-110 active:scale-90 transition-all`}
+      } h-[70px] w-[70px] text-4xl rounded-full border-none bg-[#242424] text-white fixed bottom-8 right-10 z-50 mail__btn flex justify-center items-center hover:scale-110 active:scale-90 transition-all`}
     >
       <MdMail />
     </button>

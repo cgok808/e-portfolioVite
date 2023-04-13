@@ -1,9 +1,13 @@
 import React, { useContext, useRef } from "react";
 import { ModalContext } from "../contexts/ModalCotext";
+import { ImCross } from "react-icons/im";
 import emailjs from "@emailjs/browser";
 
 const Modal = () => {
   const { modal, setModal } = useContext(ModalContext);
+  const handleModalToggle = () => {
+    setModal(modal === true ? false : true);
+  };
 
   // EMAIL JS
 
@@ -53,6 +57,8 @@ const Modal = () => {
           <b className='text-cOrange'>self-taught</b> frontend developer and
           have been certified by <b className='text-cOrange'>Google</b> that I
           understand <b className='text-cOrange'>IT Support</b> concepts!
+          <br />
+          Check out my <b className='text-cOrange'> technology stack </b>below!
         </p>
         <div className='modal__languages'>
           <figure className='modal__language'>
@@ -90,7 +96,13 @@ const Modal = () => {
         </div>
       </div>
       <div className='modal__half modal__contact'>
-        <i className='fas fa-times modal__exit click'></i>
+        <a
+          href='#'
+          className='absolute top-10 right-10 text-[#fff] text-2xl z-50 hover:scale-110 active:scale-90 transition-all'
+          onClick={handleModalToggle}
+        >
+          <ImCross />
+        </a>
         <h3 className='text-3xl font-semibold'>Let's have a chat!</h3>
         <h3 className='mt-[12px] mr-0 mb-[24px] ml-0 text-base'>
           I'm currently open to new opportunities.
