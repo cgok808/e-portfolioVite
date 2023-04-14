@@ -1,6 +1,7 @@
 import React from "react";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import me from "../assets/images/me2.png";
+import resume from "../assets/CHAYLIN_GOKAN_RESUME.pdf";
 
 const Footer = () => {
   return (
@@ -17,7 +18,8 @@ const Footer = () => {
           <ul className='footer__social--list'>
             <li>
               <a
-                href=''
+                href='https://github.com/cgok808'
+                target='_blank'
                 className='footer__social--link link__hover-effect link__hover-effect--white font-semibold'
               >
                 GitHub
@@ -25,7 +27,8 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href=''
+                href='https://www.linkedin.com/in/chaylin-gokan-83117a266/'
+                target='_blank'
                 className='footer__social--link link__hover-effect link__hover-effect--white font-semibold'
               >
                 LinkedIn
@@ -33,15 +36,8 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href='#'
-                className='footer__social--link link__hover-effect link__hover-effect--white font-semibold'
-              >
-                Contact
-              </a>
-            </li>
-            <li>
-              <a
-                href=''
+                href={resume}
+                target='_blank'
                 className='footer__social--link link__hover-effect link__hover-effect--white font-semibold'
               >
                 Resume

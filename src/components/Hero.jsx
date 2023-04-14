@@ -5,6 +5,7 @@ import { BsFileEarmarkPdfFill } from "react-icons/bs";
 import { ThemeContext } from "../App";
 import { MdMail } from "react-icons/md";
 import { ModalContext } from "../contexts/ModalCotext";
+import resume from "../assets/CHAYLIN_GOKAN_RESUME.pdf";
 
 const ContactBtn = ({ theme }) => {
   return (
@@ -73,7 +74,8 @@ const Hero = () => {
           <ul className='mt-2 flex'>
             <li>
               <a
-                href='#'
+                href='https://www.linkedin.com/in/chaylin-gokan-83117a266/'
+                target='_blank'
                 className='bg-cOrange text-white p-2 w-8 h-8 text-sm mr-3 flex justify-center items-center rounded-full header__para-secondary hover:scale-110 active:scale-90 transition-all'
               >
                 <GrLinkedinOption />
@@ -81,7 +83,8 @@ const Hero = () => {
             </li>
             <li>
               <a
-                href='#'
+                href='https://github.com/cgok808'
+                target='_blank'
                 className='bg-cOrange text-white p-2 w-8 h-8 text-sm mr-3 flex justify-center items-center rounded-full header__para-secondary hover:scale-110 active:scale-90 transition-all'
               >
                 <AiOutlineGithub />
@@ -89,7 +92,8 @@ const Hero = () => {
             </li>
             <li>
               <a
-                href='#'
+                href={resume}
+                target="_blank"
                 className='bg-cOrange text-white p-2 w-8 h-8 text-sm mr-3 flex justify-center items-center rounded-full header__para-secondary hover:scale-110 active:scale-90 transition-all'
               >
                 <BsFileEarmarkPdfFill />
