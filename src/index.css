@@ -168,6 +168,10 @@ textarea:focus {
   }
 }
 
+.fa-spinner {
+  animation: spinner 750ms infinite linear;
+}
+
 @keyframes spinner {
   0% {
     transform: rotate(0);

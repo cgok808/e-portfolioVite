@@ -1,6 +1,7 @@
 import React, { useContext, useRef } from "react";
 import { ModalContext } from "../contexts/ModalCotext";
 import { ImCross } from "react-icons/im";
+import { CgSpinnerTwo } from "react-icons/cg";
 import emailjs from "@emailjs/browser";
 
 const Modal = () => {
@@ -15,6 +16,9 @@ const Modal = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const loading = document.querySelector(".modal__overlay--loading");
+    const success = document.querySelector(".modal__overlay--success");
+    loading.classList += " modal__overlay--visible";
 
     emailjs
       .sendForm(
@@ -23,14 +27,16 @@ const Modal = () => {
         form.current,
         `${import.meta.env.VITE_PUBLIC_KEY}`
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then((result) => {
+        loading.classList.remove("modal__overlay--visible");
+        success.classList += " modal__overlay--visible";
+      })
+      .catch((error) => {
+        loading.classList.remove("modal__overlay--visible");
+        alert(
+          "The email service is temporarily unavailable. Please contact me directly on chaylin808@gmail.com"
+        );
+      });
     form.current.reset();
   };
 
@@ -151,7 +157,7 @@ const Modal = () => {
           </button>
         </form>
         <div className='modal__overlay modal__overlay--loading'>
-          <i className='fas fa-spinner'></i>
+          <CgSpinnerTwo className='fa-spinner' />
         </div>
         <div className='modal__overlay modal__overlay--success'>
           Thanks for the message! Looking forward to speaking to you soon.
