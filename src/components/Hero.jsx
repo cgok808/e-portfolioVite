@@ -53,7 +53,7 @@ const Hero = () => {
             showcase my skills and interests :)
           </p>
 
-          <p className='text-2xl leading-loose max-w-md header__para-secondary'>
+          <p className='text-2xl leading-loose max-w-md header__para'>
             <a href='#' onClick={handleModalToggle}>
               <strong className='text-cOrange font-extrabold'>
                 Click here{" "}
@@ -93,7 +93,7 @@ const Hero = () => {
             <li>
               <a
                 href={resume}
-                target="_blank"
+                target='_blank'
                 className='bg-cOrange text-white p-2 w-8 h-8 text-sm mr-3 flex justify-center items-center rounded-full header__para-secondary hover:scale-110 active:scale-90 transition-all'
               >
                 <BsFileEarmarkPdfFill />
