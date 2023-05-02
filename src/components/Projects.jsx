@@ -203,10 +203,10 @@ const Projects = () => {
                     privacy.
                   </p>
                   <div className='project__description--links flex'>
-                    <a href='https://github.com/cgok808/Library-Project-REACT'>
+                    <a href='https://github.com/cgok808/E-Portfolio-Example'>
                       <AiOutlineGithub className='text-2xl mr-3' />
                     </a>
-                    <a href='https://library-react-cgok.netlify.app/'>
+                    <a href='https://cgok808.github.io/E-Portfolio-Example/'>
                       <HiLink className='text-2xl' />
                     </a>
                   </div>
