@@ -53,8 +53,7 @@ const Modal = () => {
         </h4>
         <p className='modal__para'>
           I have a huge <b className='text-cOrange'>passion/love</b> for tech!
-          It all started from a young age exploring the Internet and playing
-          video games on the computer... to now throwing myself at every
+          It all started from a young age from building a PC just to play video games to now throwing myself at every
           opportunity to{" "}
           <b className='text-cOrange'>learn and expand my technical skillset</b>{" "}
           at every corner!
