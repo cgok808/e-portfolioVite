@@ -141,10 +141,10 @@ const Projects = () => {
                     states.
                   </p>
                   <div className='project__description--links flex'>
-                    <a href='https://github.com/cgok808/Library-Project-REACT'>
+                    <a target="blank" href='https://github.com/cgok808/Library-Project-REACT'>
                       <AiOutlineGithub className='text-2xl mr-3' />
                     </a>
-                    <a href='https://library-react-cgok.netlify.app/'>
+                    <a target="blank" href='https://library-react-cgok.netlify.app/'>
                       <HiLink className='text-2xl' />
                     </a>
                   </div>
@@ -174,10 +174,10 @@ const Projects = () => {
                     Utilizes Coin Gecko API for data shown.
                   </p>
                   <div className='project__description--links flex'>
-                    <a href='https://github.com/cgok808/CryptoTracker-v2'>
+                    <a target="blank" href='https://github.com/cgok808/CryptoTracker-v2'>
                       <AiOutlineGithub className='text-2xl mr-3' />
                     </a>
-                    <a href='https://cryptotracker-chay.netlify.app/'>
+                    <a target="blank" href='https://cryptotracker-chay.netlify.app/'>
                       <HiLink className='text-2xl' />
                     </a>
                   </div>
@@ -203,10 +203,10 @@ const Projects = () => {
                     privacy.
                   </p>
                   <div className='project__description--links flex'>
-                    <a href='https://github.com/cgok808/Library-Project-REACT'>
+                    <a target="blank" href='https://github.com/cgok808/E-Portfolio-Example'>
                       <AiOutlineGithub className='text-2xl mr-3' />
                     </a>
-                    <a href='https://library-react-cgok.netlify.app/'>
+                    <a target="blank" href='https://cgok808.github.io/E-Portfolio-Example/'>
                       <HiLink className='text-2xl' />
                     </a>
                   </div>
