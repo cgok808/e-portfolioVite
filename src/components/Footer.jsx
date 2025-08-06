@@ -5,8 +5,8 @@ import resume from "../assets/CHAYLIN_GOKAN_RESUME.pdf";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className='container'>
+    <footer className='bg-[#242424] text-white py-10 w-full'>
+      <div className='max-w-7xl mx-auto px-4'>
         <div className='flex flex-col items-center'>
           <a href='#' className='footer__anchor'>
             <figure className='footer__logo'>
@@ -15,7 +15,7 @@ const Footer = () => {
             <span className='footer__logo--popper mr-7'>Top</span>
             <BsFillArrowUpCircleFill className='footer__logo--popper text-xl' />
           </a>
-          <ul className='footer__social--list'>
+          <ul className='w-full max-w-lg flex justify-around gap-6 mt-7 mb-0'>
             <li>
               <a
                 href='https://github.com/cgok808'
