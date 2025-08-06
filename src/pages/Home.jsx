@@ -12,11 +12,13 @@ const Home = () => {
       <div
         className={`${theme === "light" ? "dark" : "bg-[#242424]"} dark__mode`}
       >
-        <Nav />
-        <Hero />
-        <Projects />
-        <Footer />
-        <Modal />
+        <div className='max-w-7xl mx-auto px-4'> 
+          <Nav />
+          <Hero />
+          <Projects />
+          <Footer />
+          <Modal />
+        </div>
       </div>
     </ModalContext.Provider>
   );
