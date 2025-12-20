@@ -114,23 +114,23 @@ const Modal = () => {
         </h3>
         <form id='contact__form' ref={form} onSubmit={sendEmail}>
           <div className='form__item'>
-            <label className='form__item--label' name='user_name'>
+            <label className='form__item--label' name='from_name'>
               Name
             </label>
             <input
               className='input'
-              name='user_name'
+              name='from_name'
               type='text'
               required
             ></input>
           </div>
           <div className='form__item'>
-            <label className='form__item--label' name='user_email'>
+            <label className='form__item--label' name='reply_to'>
               Email
             </label>
             <input
               className='input'
-              name='user_email'
+              name='reply_to'
               type='email'
               required
             ></input>
