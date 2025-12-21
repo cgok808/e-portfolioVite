@@ -45,14 +45,14 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <AiOutlineGithub className="text-2xl mr-3" />
+                      <AiOutlineGithub className="text-2xl mr-3 transition__ease hover:scale-110 active:scale-90" />
                     </a>
                     <a
                       href="https://library-react-cgok.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <HiLink className="text-2xl" />
+                      <HiLink className="text-2xl transition__ease hover:scale-110 active:scale-90" />
                     </a>
                   </div>
                 </div>
@@ -85,14 +85,14 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <AiOutlineGithub className="text-2xl mr-3" />
+                      <AiOutlineGithub className="text-2xl mr-3 transition__ease hover:scale-110 active:scale-90" />
                     </a>
                     <a
                       href="https://cryptotracker-chay.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <HiLink className="text-2xl" />
+                      <HiLink className="text-2xl transition__ease hover:scale-110 active:scale-90" />
                     </a>
                   </div>
                 </div>
@@ -121,14 +121,14 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <AiOutlineGithub className="text-2xl mr-3" />
+                      <AiOutlineGithub className="text-2xl mr-3 transition__ease hover:scale-110 active:scale-90" />
                     </a>
                     <a
                       href="https://cgok808.github.io/E-Portfolio-Example/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <HiLink className="text-2xl" />
+                      <HiLink className="text-2xl transition__ease hover:scale-110 active:scale-90" />
                     </a>
                   </div>
                 </div>
