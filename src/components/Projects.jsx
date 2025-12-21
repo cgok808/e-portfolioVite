@@ -1,13 +1,48 @@
 import React, { useContext } from "react";
-import { AiOutlineGithub } from "react-icons/ai";
-import { HiLink } from "react-icons/hi";
 import cryptoProject from "../assets/images/crypto-min.png";
 import ePort from "../assets/images/e-port.png";
 import library from "../assets/images/library.png";
 import { ThemeContext } from "../App";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   const { theme } = useContext(ThemeContext);
+
+  const projects = [
+    {
+      id: "library",
+      title: "Library",
+      subtitle: "React | JavaScript",
+      description:
+        "A responsive React e-commerce application displaying popular and recommended books. Includes full e-commerce functionality, mock API usage, and UX loading states.",
+      imgSrc: library,
+      imgAlt: "Library project",
+      github: "https://github.com/cgok808/Library-Project-REACT",
+      live: "https://library-react-cgok.netlify.app/",
+    },
+    {
+      id: "crypto",
+      title: "Cryptocurrency Tracker",
+      subtitle: "React | Firebase | Material UI | Chart.js",
+      description:
+        "A responsive cryptocurrency tracker featuring authentication, watchlists, and real-time data powered by the CoinGecko API.",
+      imgSrc: cryptoProject,
+      imgAlt: "Crypto tracker project",
+      github: "https://github.com/cgok808/CryptoTracker-v2",
+      live: "https://cryptotracker-chay.netlify.app/",
+    },
+    {
+      id: "eport",
+      title: "E-Portfolio Template",
+      subtitle: "HTML | CSS | JavaScript",
+      description:
+        "A responsive multi-platform portfolio built using semantic HTML5 and BEM-styled CSS. Client data replaced for privacy.",
+      imgSrc: ePort,
+      imgAlt: "E-Portfolio project",
+      github: "https://github.com/cgok808/E-Portfolio-Example",
+      live: "https://cgok808.github.io/E-Portfolio-Example/",
+    },
+  ];
 
   return (
     <section id="projects" className="flex justify-center">
@@ -22,118 +57,18 @@ const Projects = () => {
           </h1>
 
           <ul className="list-none p-0 m-0">
-            {/* Project 1 */}
-            <li className="mb-36">
-              <div className="project__wrapper">
-                <img src={library} alt="Library project" className="project__img" />
-                <div className="project__wrapper--bg" />
-                <div className="project__description">
-                  <h3 className="project__description--title font-bold">
-                    Library
-                  </h3>
-                  <h4 className="project__description--sub-title font-semibold text-3xl">
-                    React | JavaScript
-                  </h4>
-                  <p className="project__description--para">
-                    A responsive React e-commerce application displaying popular
-                    and recommended books. Includes full e-commerce
-                    functionality, mock API usage, and UX loading states.
-                  </p>
-                  <div className="project__description--links flex">
-                    <a
-                      href="https://github.com/cgok808/Library-Project-REACT"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <AiOutlineGithub className="text-2xl mr-3 transition__ease hover:scale-110 active:scale-90" />
-                    </a>
-                    <a
-                      href="https://library-react-cgok.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <HiLink className="text-2xl transition__ease hover:scale-110 active:scale-90" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            {/* Project 2 */}
-            <li className="mb-36">
-              <div className="project__wrapper">
-                <img
-                  src={cryptoProject}
-                  alt="Crypto tracker project"
-                  className="project__img"
-                />
-                <div className="project__wrapper--bg" />
-                <div className="project__description">
-                  <h3 className="project__description--title font-bold">
-                    Cryptocurrency Tracker
-                  </h3>
-                  <h4 className="project__description--sub-title font-semibold text-3xl">
-                    React | Firebase | Material UI | Chart.js
-                  </h4>
-                  <p className="project__description--para">
-                    A responsive cryptocurrency tracker featuring authentication,
-                    watchlists, and real-time data powered by the CoinGecko API.
-                  </p>
-                  <div className="project__description--links flex">
-                    <a
-                      href="https://github.com/cgok808/CryptoTracker-v2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <AiOutlineGithub className="text-2xl mr-3 transition__ease hover:scale-110 active:scale-90" />
-                    </a>
-                    <a
-                      href="https://cryptotracker-chay.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <HiLink className="text-2xl transition__ease hover:scale-110 active:scale-90" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            {/* Project 3 */}
-            <li className="mb-36">
-              <div className="project__wrapper">
-                <img src={ePort} alt="E-Portfolio project" className="project__img" />
-                <div className="project__wrapper--bg" />
-                <div className="project__description">
-                  <h3 className="project__description--title font-bold">
-                    E-Portfolio Template
-                  </h3>
-                  <h4 className="project__description--sub-title font-semibold text-3xl">
-                    HTML | CSS | JavaScript
-                  </h4>
-                  <p className="project__description--para">
-                    A responsive multi-platform portfolio built using semantic
-                    HTML5 and BEM-styled CSS. Client data replaced for privacy.
-                  </p>
-                  <div className="project__description--links flex">
-                    <a
-                      href="https://github.com/cgok808/E-Portfolio-Example"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <AiOutlineGithub className="text-2xl mr-3 transition__ease hover:scale-110 active:scale-90" />
-                    </a>
-                    <a
-                      href="https://cgok808.github.io/E-Portfolio-Example/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <HiLink className="text-2xl transition__ease hover:scale-110 active:scale-90" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
+            {projects.map((p) => (
+              <ProjectCard
+                key={p.id}
+                title={p.title}
+                subtitle={p.subtitle}
+                description={p.description}
+                imgSrc={p.imgSrc}
+                imgAlt={p.imgAlt}
+                github={p.github}
+                live={p.live}
+              />
+            ))}
           </ul>
         </div>
       </div>
