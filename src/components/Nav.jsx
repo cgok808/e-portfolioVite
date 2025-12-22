@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import logo from "../assets/images/me2.png";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { ThemeContext } from "../App";
-import { ModalContext } from "../contexts/ModalCotext";
+import { ModalContext } from "../contexts/ModalContext";
 
 const Nav = () => {
   const { modal, setModal } = useContext(ModalContext);

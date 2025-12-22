@@ -1,5 +1,5 @@
 import React, { useContext, useRef } from "react";
-import { ModalContext } from "../contexts/ModalCotext";
+import { ModalContext } from "../contexts/ModalContext";
 import { ImCross } from "react-icons/im";
 import { CgSpinnerTwo } from "react-icons/cg";
 import emailjs from "@emailjs/browser";

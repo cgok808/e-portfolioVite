@@ -4,7 +4,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { BsFileEarmarkPdfFill } from "react-icons/bs";
 import { ThemeContext } from "../App";
 import { MdMail } from "react-icons/md";
-import { ModalContext } from "../contexts/ModalCotext";
+import { ModalContext } from "../contexts/ModalContext";
 import resume from "../assets/CHAYLIN_GOKAN_RESUME.pdf";
 
 const ContactBtn = ({ theme }) => {
@@ -22,10 +22,10 @@ const ContactBtn = ({ theme }) => {
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
   const { modal, setModal } = useContext(ModalContext);
-  const handleModalToggle = () => {
-    setModal(modal === true ? false : true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+const handleModalToggle = () => {
+  setModal(prev => !prev); 
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
   return (
     <>
       <section

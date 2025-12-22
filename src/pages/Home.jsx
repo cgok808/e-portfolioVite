@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Footer, Hero, Modal, Nav, Projects } from "../components";
 import { ThemeContext } from "../App";
-import { ModalContext } from "../contexts/ModalCotext";
+import { ModalContext } from "../contexts/ModalContext";
 import { useState } from "react";
 
 const Home = () => {
