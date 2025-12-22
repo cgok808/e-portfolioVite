@@ -43,27 +43,12 @@ const Modal = () => {
   return (
     <div className={`${modal === false ? true : "modal--open"} modal`}>
       <div className='modal__half modal__about text-black text-center'>
-        <h3 className='text-3xl font-semibold'>Here's a bit about me.</h3>
-        <h4 className='mt-[12px] mr-0 mb-[24px] ml-0 text-base'>
-          Specific Interests:
-          <br />
-          <b className='text-cOrange'>
-            Frontend Software Development and IT Support
-          </b>
-        </h4>
+        <h3 className='text-3xl font-semibold'>Here's a bit about me!</h3>
         <p className='modal__para'>
-          I have a huge <b className='text-cOrange'>passion</b> for technology!
-          It all started at a young age when I built a PC to play video games.
-          Since then, I've thrown myself at every opportunity to{" "}
-          <b className='text-cOrange'>learn and expand my technical skillset</b>
-          !
-          <br />I am currently pursuing a Bachelor's degree in Computer Science
-          at the University of Hawaiʻi at Mānoa. I'm also a{" "}
-          <b className='text-cOrange'>self-taught</b> frontend developer with
-          the <b className='text-cOrange'>Google IT Support Certificate</b>{" "}
-          earned through Coursera!
           <br />
-          Check out my <b className='text-cOrange'> technology stack </b>below!
+          Hi! I’m a Computer Science student at <b className="text-cOrange">UH Mānoa</b> who loves exploring new modern development tools and building projects. While my degree keeps me busy, I’m also a self-taught frontend developer and a Google-certified IT professional. 
+          <br/>
+          Check out my <b className='text-cOrange'> frontend technology stack </b>below!
         </p>
         <div className='modal__languages'>
           <figure className='modal__language'>
