@@ -31,17 +31,17 @@ const Projects = () => {
       github: "https://github.com/cgok808/homepage-Project",
       live: "https://chaylinshomepage.netlify.app/",
     },
-    {
-      id: "eport",
-      title: "E-Portfolio Template",
-      subtitle: "HTML | CSS | JavaScript",
-      description:
-        "A responsive multi-platform portfolio built using semantic HTML5 and BEM-styled CSS. Client data replaced for privacy.",
-      imgSrc: ePort,
-      imgAlt: "E-Portfolio project",
-      github: "https://github.com/cgok808/E-Portfolio-Example",
-      live: "https://cgok808.github.io/E-Portfolio-Example/",
-    },
+    // {
+    //   id: "eport",
+    //   title: "E-Portfolio Template",
+    //   subtitle: "HTML | CSS | JavaScript",
+    //   description:
+    //     "A responsive multi-platform portfolio built using semantic HTML5 and BEM-styled CSS. Client data replaced for privacy.",
+    //   imgSrc: ePort,
+    //   imgAlt: "E-Portfolio project",
+    //   github: "https://github.com/cgok808/E-Portfolio-Example",
+    //   live: "https://cgok808.github.io/E-Portfolio-Example/",
+    // },
   ];
 
   return (
