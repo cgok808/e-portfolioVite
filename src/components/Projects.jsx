@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import cryptoProject from "../assets/images/crypto-min.png";
+import dashboardProject from "../assets/images/dashboard.png";
 import ePort from "../assets/images/e-port.png";
 import library from "../assets/images/library.png";
 import { ThemeContext } from "../App";
@@ -21,15 +21,15 @@ const Projects = () => {
       live: "https://library-react-cgok.netlify.app/",
     },
     {
-      id: "crypto",
-      title: "Cryptocurrency Tracker",
-      subtitle: "React | Firebase | Material UI | Chart.js",
+      id: "dashboard",
+      title: "Personal Dashboard",
+      subtitle: "React | Vite | WeatherAPI",
       description:
-        "A responsive cryptocurrency tracker featuring authentication, watchlists, and real-time data powered by the CoinGecko API.",
-      imgSrc: cryptoProject,
-      imgAlt: "Crypto tracker project",
-      github: "https://github.com/cgok808/CryptoTracker-v2",
-      live: "https://cryptotracker-chay.netlify.app/",
+        "A React and Vite-powered personal dashboard designed for daily use, featuring real-time weather integration, adaptive wallpapers based on time of day, task tracking, and quick search access to Google, Reddit, Amazon, Spotify, and YouTube.",
+      imgSrc: dashboardProject,
+      imgAlt: "Personal dashboard project",
+      github: "https://github.com/cgok808/homepage-Project",
+      live: "https://chaylinshomepage.netlify.app/",
     },
     {
       id: "eport",
