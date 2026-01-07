@@ -25,7 +25,7 @@ const Projects = () => {
       title: "Personal Dashboard",
       subtitle: "React | Vite | WeatherAPI",
       description:
-        "A React and Vite-powered personal dashboard designed for daily use, featuring real-time weather integration, adaptive wallpapers based on time of day, task tracking, and quick search access to Google, Reddit, Amazon, Spotify, and YouTube.",
+        "Personal dashboard designed for my daily use. Utilizes Weather API to display local weather, has an adaptive wallpaper based on local time, integrates a persistent task tracker that you can manage, and features a unified search hub for instant access to Google, Reddit, Amazon, Spotify, and YouTube.",
       imgSrc: dashboardProject,
       imgAlt: "Personal dashboard project",
       github: "https://github.com/cgok808/homepage-Project",
