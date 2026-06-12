@@ -11,10 +11,10 @@ const Projects = () => {
   const projects = [
     {
       id: "library",
-      title: "Library",
+      title: "Studio Ghibli Library",
       subtitle: "React | JavaScript",
       description:
-        "A responsive React e-commerce application displaying popular and recommended books. Includes full e-commerce functionality, mock API usage, and UX loading states.",
+        "A responsive React e-commerce application displaying popular and recommended Studio Ghibli films. Includes full e-commerce functionality, mock API usage, and UX loading states.",
       imgSrc: library,
       imgAlt: "Library project",
       github: "https://github.com/cgok808/Library-Project-REACT",
