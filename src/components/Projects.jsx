@@ -17,8 +17,8 @@ const Projects = () => {
         "A responsive React e-commerce application displaying popular and recommended Studio Ghibli films. Includes full e-commerce functionality, mock API usage, and UX loading states.",
       imgSrc: library,
       imgAlt: "Library project",
-      github: "https://github.com/cgok808/Library-Project-REACT",
-      live: "https://library-react-cgok.netlify.app/",
+      github: "https://github.com/cgok808/studio_ghibli_library",
+      live: "https://studioghibli-library.netlify.app/",
     },
     {
       id: "dashboard",
