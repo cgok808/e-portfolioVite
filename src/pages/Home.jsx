@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <ModalContext.Provider value={{ modal, setModal }}>
       <div
-        className={`${theme === "light" ? "dark" : "bg-[#242424]"} dark__mode`}
+        className={`${theme === "dark" ? "bg-cDark" : "bg-white"} dark__mode`}
       >
         <Nav />
         <div className='max-w-7xl mx-auto px-4'>

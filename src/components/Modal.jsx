@@ -2,6 +2,8 @@ import React, { useContext, useRef } from "react";
 import { ModalContext } from "../contexts/ModalContext";
 import { ImCross } from "react-icons/im";
 import { CgSpinnerTwo } from "react-icons/cg";
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
 import emailjs from "@emailjs/browser";
 
 const Modal = () => {
@@ -41,7 +43,7 @@ const Modal = () => {
   };
 
   return (
-    <div className={`${modal === false ? true : "modal--open"} modal`}>
+    <div className={`${modal ? "modal--open" : ""} modal`}>
       <div className='modal__half modal__about text-black text-center'>
         <h3 className='text-3xl font-semibold'>Here's a bit about me!</h3>
         <p className='modal__para'>
@@ -52,35 +54,19 @@ const Modal = () => {
         </p>
         <div className='modal__languages'>
           <figure className='modal__language'>
-            <img
-              className='modal__language--img'
-              src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png'
-              alt=''
-            />
+            <FaHtml5 className='modal__language--img text-[#e44d26]' />
             <span className='language__name'>HTML</span>
           </figure>
           <figure className='modal__language'>
-            <img
-              className='modal__language--img'
-              src='https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png'
-              alt=''
-            />
+            <FaCss3Alt className='modal__language--img text-[#264de4]' />
             <span className='language__name'>CSS</span>
           </figure>
           <figure className='modal__language'>
-            <img
-              className='modal__language--img'
-              src='https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png'
-              alt=''
-            />
+            <SiJavascript className='modal__language--img text-[#f0db4f]' />
             <span className='language__name'>JavaScript</span>
           </figure>
           <figure className='modal__language'>
-            <img
-              className='modal__language--img'
-              src='https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png'
-              alt=''
-            />
+            <FaReact className='modal__language--img text-[#61dafb]' />
             <span className='language__name'>React</span>
           </figure>
         </div>

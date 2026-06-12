@@ -5,17 +5,19 @@ import resume from "../assets/CHAYLIN_GOKAN_RESUME.pdf";
 
 const Footer = () => {
   return (
-    <footer className='bg-[#242424] text-white py-10 w-full'>
+    <footer className='bg-cDark text-white py-10 w-full'>
       <div className='max-w-7xl mx-auto px-4'>
         <div className='flex flex-col items-center'>
           <a href='#' className='footer__anchor'>
             <figure className='footer__logo'>
               <img src={me} className='footer__logo--img' alt='' />
             </figure>
-            <span className='footer__logo--popper mr-7'>Top</span>
-            <BsFillArrowUpCircleFill className='footer__logo--popper text-xl' />
+            <span className='footer__logo--popper'>
+              <BsFillArrowUpCircleFill />
+              Top
+            </span>
           </a>
-          <ul className='w-full max-w-lg flex justify-around gap-6 mt-7 mb-0'>
+          <ul className='w-full max-w-lg flex justify-around gap-6 mt-10 mb-0'>
             <li>
               <a
                 href='https://github.com/cgok808'
@@ -44,6 +46,9 @@ const Footer = () => {
               </a>
             </li>
           </ul>
+          <p className='footer__copyright text-sm mt-6 opacity-60'>
+            &copy; {new Date().getFullYear()} Chaylin Gokan
+          </p>
         </div>
       </div>
     </footer>

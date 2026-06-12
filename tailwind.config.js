@@ -8,6 +8,8 @@ export default {
       },
       colors: {
         cOrange: "#e4991d",
+        cDark: "#242424",
+        cLight: "#f5f5f5",
       },
     },
   },
