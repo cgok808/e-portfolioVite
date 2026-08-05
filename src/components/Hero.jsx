@@ -69,15 +69,6 @@ const Hero = () => {
           <ul className='mt-2 flex'>
             <li>
               <a
-                href='https://www.linkedin.com/in/chaylin-gokan-83117a266/'
-                target='_blank'
-                className='bg-cOrange text-white p-2 w-8 h-8 text-sm mr-3 flex justify-center items-center rounded-full header__para-secondary hover:scale-110 active:scale-90 transition-all'
-              >
-                <GrLinkedinOption />
-              </a>
-            </li>
-            <li>
-              <a
                 href='https://github.com/cgok808'
                 target='_blank'
                 className='bg-cOrange text-white p-2 w-8 h-8 text-sm mr-3 flex justify-center items-center rounded-full header__para-secondary hover:scale-110 active:scale-90 transition-all'

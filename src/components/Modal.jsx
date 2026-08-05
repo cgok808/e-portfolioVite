@@ -48,7 +48,7 @@ const Modal = () => {
         <h3 className='text-3xl font-semibold'>Here's a bit about me!</h3>
         <p className='modal__para'>
           <br />
-          Hi! I’m a Computer Science student at <b className="text-cOrange">UH Mānoa</b> who loves exploring new modern development tools and building projects. While my degree keeps me busy, I’m also a self-taught frontend developer and a Google-certified IT professional. 
+          Hi! I’m a CS student at <b className="text-cOrange">UH Mānoa</b> who loves exploring new modern development tools and building projects. While my degree keeps me busy, I’m also a self-taught frontend developer and a Google-certified IT professional. 
           <br/>
           Check out my <b className='text-cOrange'> frontend technology stack </b>below!
         </p>

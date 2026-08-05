@@ -12,9 +12,8 @@ const Projects = () => {
     {
       id: "library",
       title: "Studio Ghibli Library",
-      subtitle: "React | JavaScript",
-      description:
-        "A responsive React e-commerce application displaying popular and recommended Studio Ghibli films. Includes full e-commerce functionality, mock API usage, and UX loading states.",
+      subtitle: "React | Vite | Tailwind CSS | React Router",
+      description: "A responsive React storefront app for browsing Studio Ghibli films. Includes category filtering, dynamic pricing, and a persistent shopping cart, all built on a local dataset with a clean, minimal UI.",
       imgSrc: library,
       imgAlt: "Library project",
       github: "https://github.com/cgok808/studio_ghibli_library",
@@ -23,9 +22,8 @@ const Projects = () => {
     {
       id: "dashboard",
       title: "Personal Dashboard",
-      subtitle: "React | Vite | WeatherAPI",
-      description:
-        "Personal dashboard designed for my daily use. Utilizes Weather API to display local weather, has an adaptive wallpaper based on local time, integrates a persistent task tracker that you can manage, and features a unified search hub for instant access to Google, Reddit, Amazon, Spotify, and YouTube.",
+      subtitle: "React | Vite | Tailwind CSS | WeatherAPI",
+      description: "Personal dashboard designed for daily use. Features a time-aware wallpaper, local weather via WeatherAPI, a persistent task tracker, quick-launch app shortcuts, and a unified search hub for instant access to Google, Reddit, Amazon, Spotify, and YouTube.",
       imgSrc: dashboardProject,
       imgAlt: "Personal dashboard project",
       github: "https://github.com/cgok808/homepage-Project",
